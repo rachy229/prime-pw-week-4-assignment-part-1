@@ -67,7 +67,7 @@ console.log (getLast (cheeseTray));
 
 function find( value, array ){
   for (let i=0; i < array.length; i++){
-   if(i === value) {
+   if(array[i] === value) {
     return true;
     } 
     return false;
@@ -75,6 +75,7 @@ function find( value, array ){
 }
 
 console.log(find ('cheese', cheeseTray));
+console.log(find ('squidward', cheeseTray));
 
 
 
