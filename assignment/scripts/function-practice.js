@@ -70,12 +70,15 @@ function find( value, array ){
    if(array[i] === value) {
     return true;
     } 
-    return false;
   }
+  return false;
 }
 
-console.log(find ('cheese', cheeseTray));
-console.log(find ('squidward', cheeseTray));
+console.log('expect true' , find ('cheese', cheeseTray));
+console.log('expect false' , find ('squidward', cheeseTray));
+console.log('expect true' , find ('even more cheese', cheeseTray));
+console.log('expect false' , find (27, cheeseTray));
+console.log(find ('expect true' , 'crackers', cheeseTray));
 
 
 
